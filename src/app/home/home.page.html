@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title>
-      Primera APP-IONIC
+      Calculadora Basica
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,7 @@
 <ion-content class="ion-padding">
 
   <ion-card>
-    <ion-card-header>
-      <ion-card-title>Calculadora</ion-card-title>
-    </ion-card-header>
+
 
     <ion-card-content>
       <ion-card color="light" class="pantalla-container">
@@ -23,47 +21,52 @@
       <ion-grid>
         <ion-row>
           <ion-col size="9">
-            <ion-button expand="block" color="#4A5C6A" (click)="limpiar()">C</ion-button>
+            <ion-button expand="block" class="btn-borrar" (click)="limpiar()">C</ion-button>
           </ion-col>
           <ion-col size="3">
-            <ion-button expand="block" color="warning" (click)="presionarOperador('/')">/</ion-button>
+            <ion-button expand="block" class="btn-operador" (click)="presionarOperador('/')">/</ion-button>
           </ion-col>
         </ion-row>
 
         <ion-row>
-          <ion-col size="3"><ion-button expand="block" color="medium" (click)="presionarNumero('7')">7</ion-button></ion-col>
-          <ion-col size="3"><ion-button expand="block" color="medium" (click)="presionarNumero('8')">8</ion-button></ion-col>
-          <ion-col size="3"><ion-button expand="block" color="medium" (click)="presionarNumero('9')">9</ion-button></ion-col>
-          <ion-col size="3"><ion-button expand="block" color="warning" (click)="presionarOperador('*')">×</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-numero" (click)="presionarNumero('7')">7</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-numero" (click)="presionarNumero('8')">8</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-numero" (click)="presionarNumero('9')">9</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-operador" (click)="presionarOperador('*')">×</ion-button></ion-col>
         </ion-row>
 
         <ion-row>
-          <ion-col size="3"><ion-button expand="block" color="medium" (click)="presionarNumero('4')">4</ion-button></ion-col>
-          <ion-col size="3"><ion-button expand="block" color="medium" (click)="presionarNumero('5')">5</ion-button></ion-col>
-          <ion-col size="3"><ion-button expand="block" color="medium" (click)="presionarNumero('6')">6</ion-button></ion-col>
-          <ion-col size="3"><ion-button expand="block" color="warning" (click)="presionarOperador('-')">-</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-numero" (click)="presionarNumero('4')">4</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-numero" (click)="presionarNumero('5')">5</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-numero" (click)="presionarNumero('6')">6</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-operador" (click)="presionarOperador('-')">-</ion-button></ion-col>
         </ion-row>
 
         <ion-row>
-          <ion-col size="3"><ion-button expand="block" color="medium" (click)="presionarNumero('1')">1</ion-button></ion-col>
-          <ion-col size="3"><ion-button expand="block" color="medium" (click)="presionarNumero('2')">2</ion-button></ion-col>
-          <ion-col size="3"><ion-button expand="block" color="medium" (click)="presionarNumero('3')">3</ion-button></ion-col>
-          <ion-col size="3"><ion-button expand="block" color="warning" (click)="presionarOperador('+')">+</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-numero" (click)="presionarNumero('1')">1</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-numero" (click)="presionarNumero('2')">2</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-numero" (click)="presionarNumero('3')">3</ion-button></ion-col>
+          <ion-col size="3"><ion-button expand="block" class="btn-operador" (click)="presionarOperador('+')">+</ion-button></ion-col>
         </ion-row>
 
         <ion-row>
           <ion-col size="6">
-            <ion-button expand="block" color="medium" (click)="presionarNumero('0')">0</ion-button>
+            <ion-button expand="block" class="btn-numero" (click)="presionarNumero('0')">0</ion-button>
           </ion-col>
           <ion-col size="3">
-            <ion-button expand="block" color="medium" (click)="presionarNumero('.')">.</ion-button>
+            <ion-button expand="block" class="btn-numero" (click)="presionarNumero('.')">.</ion-button>
           </ion-col>
           <ion-col size="3">
-            <ion-button expand="block" color="success" (click)="calcular()">=</ion-button>
+            <ion-button expand="block" class="btn-igual" (click)="calcular()">=</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
     </ion-card-content>
   </ion-card>
+
+  <div class="creditos-footer">
+    <ion-icon name="code-working-outline"></ion-icon>
+    <span>Desarrollado por: <strong>Luis Ley Viteri</strong></span>
+  </div>
 
 </ion-content>

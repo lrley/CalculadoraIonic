@@ -30,3 +30,19 @@ ion-button {
   --border-radius: 8px; /* Bordes ligeramente redondeados */
   margin: 2px 0;
 }
+
+.creditos-footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9rem;
+  color: #8a8a8a; /* Un gris suave muy sutil */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px; /* Espacio entre el ícono y el texto */
+  border-top: 1px solid rgba(0, 0, 0, 0.05); /* Una línea divisoria muy fina */
+}
+
+.creditos-footer strong {
+  color: #4a5c6a; /* Resalta tu nombre con tu color personalizado */
+}
