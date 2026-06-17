@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title>
-      Calculadora Basica
+      Calculadora Avanzada
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,8 +9,6 @@
 <ion-content class="ion-padding">
 
   <ion-card>
-
-
     <ion-card-content>
       <ion-card color="light" class="pantalla-container">
         <ion-card-content class="text-end">
@@ -20,10 +18,25 @@
 
       <ion-grid>
         <ion-row>
-          <ion-col size="9">
+          <ion-col size="4">
             <ion-button expand="block" class="btn-borrar" (click)="limpiar()">C</ion-button>
           </ion-col>
-          <ion-col size="3">
+          <ion-col size="4">
+            <ion-button expand="block" class="btn-borrar" (click)="limpiarPantalla()">CE</ion-button>
+          </ion-col>
+          <ion-col size="4">
+            <ion-button expand="block" class="btn-borrar" (click)="borrarDigito()">←</ion-button>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="4">
+            <ion-button expand="block" class="btn-operador" (click)="presionarOperador('^')">xʸ</ion-button>
+          </ion-col>
+          <ion-col size="4">
+            <ion-button expand="block" class="btn-operador" (click)="raizCuadrada()">√</ion-button>
+          </ion-col>
+          <ion-col size="3" offset="1">
             <ion-button expand="block" class="btn-operador" (click)="presionarOperador('/')">/</ion-button>
           </ion-col>
         </ion-row>
@@ -64,9 +77,9 @@
     </ion-card-content>
   </ion-card>
 
-<ion-card-header class="header-minimalista">
-  <ion-card-subtitle>PROYECTO INICIAL</ion-card-subtitle>
-  <ion-card-title>Luis Ley Viteri</ion-card-title>
-</ion-card-header>
+  <ion-card-header class="header-minimalista">
+    <ion-card-subtitle>PROYECTO INICIAL</ion-card-subtitle>
+    <ion-card-title>Luis Ley Viteri</ion-card-title>
+  </ion-card-header>
 
 </ion-content>
